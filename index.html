@@ -1,107 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Albina's Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f4f8;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #005b96;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
-
-    h2 {
-      color: #005b96;
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    li {
-      margin-bottom: 0.8rem;
-    }
-
-    a {
-      color: #0077cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    .emoji {
-      font-size: 1.1rem;
-      margin-right: 0.3rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hello! I'm Albina 👩‍💻</h1>
-    <p>Data Analytics · ESG · BI Tools · Python & R</p>
+
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Hello! I'm <span class="highlight">Albina</span></h1>
+      <p>I’m a data scientist specializing in business analytics, ESG analysis, and data visualization.</p>
+    </div>
+    <div class="hero-illustration">
+      <img src="illustration.png" alt="Illustration of Albina">
+    </div>
   </header>
 
-  <section>
-    <h2>📌 About Me</h2>
-    <p>
-      I’m a Master's student in Business Analytics with a passion for turning data into insights.
-      My skills include Python, R, Power BI, and text mining. I enjoy working on predictive modeling,
-      ESG scoring, and building interactive dashboards.
-    </p>
+  <section class="section skills">
+    <h2>Skills</h2>
+    <div class="badge-list">
+      <span class="badge">Python</span>
+      <span class="badge">R</span>
+      <span class="badge">SQL</span>
+      <span class="badge">Power BI</span>
+      <span class="badge">Tableau</span>
+      <span class="badge">Machine Learning</span>
+    </div>
   </section>
 
-  <section>
-    <h2>📁 Selected Projects</h2>
-    <ul>
-      <li><span class="emoji">🛏️</span><a href="https://github.com/Bina1205/airbnb-text-mining">Airbnb Text Mining (R)</a> — Uncovering pricing and perception trends in property descriptions.</li>
-      <li><span class="emoji">😊</span><a href="https://github.com/Bina1205/world-happiness-dashboard">World Happiness Dashboard (Power BI)</a> — Visualizing key happiness metrics globally (2015–2023).</li>
-      <li><span class="emoji">🌱</span><a href="https://github.com/Bina1205/esg-forecast">ESG Forecasting (Python)</a> — Predicting ESG scores using structured and unstructured data.</li>
-    </ul>
+  <section class="section projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>📊 World Happiness Report Dashboard</h3>
+        <p>An interactive dashboard visualizing global happiness indicators (2015–2023).</p>
+        <a href="https://github.com/Bina1205/world-happiness-dashboard" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <h3>🤖 ESG Machine Learning Model</h3>
+        <p>A machine learning model to predict ESG scores using structured and unstructured data.</p>
+        <a href="https://github.com/Bina1205/esg-forecast" target="_blank">View Project</a>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>📬 Contact</h2>
-    <p>Let’s connect on <a href="https://www.linkedin.com/in/your-linkedin/">LinkedIn</a> or check out my <a href="https://github.com/Bina1205">GitHub profile</a>.</p>
+  <section class="section contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me via:</p>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/albina-akhmatova/" target="_blank" class="button linkedin">LinkedIn</a>
+      <a href="https://github.com/Bina1205" target="_blank" class="button github">GitHub</a>
+    </div>
   </section>
 
-  <footer>
-    &copy; 2025 Albina | Built with 💙 using GitHub Pages
-  </footer>
 </body>
 </html>
 
