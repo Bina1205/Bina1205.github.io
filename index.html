@@ -2,77 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Albina's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #005b96;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #005b96;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .emoji {
+      font-size: 1.1rem;
+      margin-right: 0.3rem;
+    }
+  </style>
 </head>
 <body>
-
   <header>
-    <h1>Albina</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Hello! I'm Albina 👩‍💻</h1>
+    <p>Data Analytics · ESG · BI Tools · Python & R</p>
   </header>
 
-  <main>
-    <section id="about" class="container">
-      <div class="about-content">
-        <img src="your-photo.jpg" alt="Albina Akhmatova" class="profile-photo">
-        <div>
-          <h2>Hello! I’m Albina 👩‍💻</h2>
-          <p>I’m a Master's student in Business Analytics with a strong background in data analysis, ESG, and business intelligence.</p>
+  <section>
+    <h2>📌 About Me</h2>
+    <p>
+      I’m a Master's student in Business Analytics with a passion for turning data into insights.
+      My skills include Python, R, Power BI, and text mining. I enjoy working on predictive modeling,
+      ESG scoring, and building interactive dashboards.
+    </p>
+  </section>
 
-          <h3>📚 About Me</h3>
-          <p>I’m passionate about transforming data into actionable insights. My work spans Python, R, Power BI, and text mining. I have hands-on experience with predictive modeling, machine learning, and interactive dashboard design.</p>
-        </div>
-      </div>
+  <section>
+    <h2>📁 Selected Projects</h2>
+    <ul>
+      <li><span class="emoji">🛏️</span><a href="https://github.com/Bina1205/airbnb-text-mining">Airbnb Text Mining (R)</a> — Uncovering pricing and perception trends in property descriptions.</li>
+      <li><span class="emoji">😊</span><a href="https://github.com/Bina1205/world-happiness-dashboard">World Happiness Dashboard (Power BI)</a> — Visualizing key happiness metrics globally (2015–2023).</li>
+      <li><span class="emoji">🌱</span><a href="https://github.com/Bina1205/esg-forecast">ESG Forecasting (Python)</a> — Predicting ESG scores using structured and unstructured data.</li>
+    </ul>
+  </section>
 
-      <h3>🛠 Skills</h3>
-      <ul class="skills">
-        <li>Python</li>
-        <li>R / tidytext / ggplot2</li>
-        <li>Power BI</li>
-        <li>SQL</li>
-        <li>Machine Learning</li>
-        <li>Text Mining</li>
-      </ul>
+  <section>
+    <h2>📬 Contact</h2>
+    <p>Let’s connect on <a href="https://www.linkedin.com/in/your-linkedin/">LinkedIn</a> or check out my <a href="https://github.com/Bina1205">GitHub profile</a>.</p>
+  </section>
 
-      <h3>🎓 Education</h3>
-      <p><strong>Master's in Business Analytics</strong>, Boston, USA – 2024–2025</p>
-      <p><strong>Bachelor's in Economics & Statistics</strong>, HSE University, Moscow – with honors</p>
-    </section>
-
-    <section id="projects" class="container">
-      <h3>📁 Selected Projects</h3>
-      <div class="cards">
-        <div class="card">
-          <h4>📊 Airbnb Text Mining (R)</h4>
-          <p>Analyzing property descriptions across countries to uncover pricing and perception patterns.</p>
-          <a href="https://github.com/Bina1205/airbnb-text-mining" target="_blank">View Project</a>
-        </div>
-        <div class="card">
-          <h4>😊 World Happiness Dashboard</h4>
-          <p>Interactive Power BI dashboard on global happiness indicators (2015–2023).</p>
-          <a href="https://github.com/Bina1205/world-happiness-dashboard" target="_blank">View Project</a>
-        </div>
-        <div class="card">
-          <h4>🌱 ESG Forecasting (Python)</h4>
-          <p>Machine learning approach to assess ESG scores using structured and unstructured data.</p>
-          <a href="https://github.com/Bina1205/esg-forecast" target="_blank">View Project</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="container">
-      <h3>📬 Contact</h3>
-      <p>Feel free to connect with me:</p>
-      <a class="button linkedin" href="https://www.linkedin.com/in/albina-akhmatova/" target="_blank">LinkedIn</a>
-      <a class="button github" href="https://github.com/Bina1205" target="_blank">GitHub</a>
-    </section>
-  </main>
-
+  <footer>
+    &copy; 2025 Albina | Built with 💙 using GitHub Pages
+  </footer>
 </body>
 </html>
+
+ 
