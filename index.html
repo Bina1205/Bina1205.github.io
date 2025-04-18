@@ -5,52 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Albina's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <section class="hero">
+  <button class="theme-toggle" onclick="document.body.classList.toggle('dark')">🌓</button>
+  
+  <section class="hero fade-in">
     <div class="hero-text">
-      <h1>Hello! I’m Albina</h1>
+      <h1>Hello! I’m <span>Albina</span></h1>
       <p>I’m a data scientist specializing in business analytics, ESG analysis, and data visualization.</p>
+      <a class="button resume" href="resume.pdf" download>📄 Download Resume</a>
     </div>
     <div class="hero-img">
       <img src="avatar.png" alt="Albina Illustration" />
     </div>
   </section>
 
-  <section class="skills">
+  <section class="skills fade-in">
     <h2>Skills</h2>
     <div class="badges">
       <span>Python</span>
       <span>R</span>
       <span>SQL</span>
-      <span>TB</span>
+      <span>Power BI</span>
       <span>Tableau</span>
+      <span>Machine Learning</span>
+    </div>
+    <div class="skill-bars">
+      <div class="skill-bar"><span>Python</span><div class="bar"><div class="level" style="width: 90%"></div></div></div>
+      <div class="skill-bar"><span>R</span><div class="bar"><div class="level" style="width: 80%"></div></div></div>
+      <div class="skill-bar"><span>Power BI</span><div class="bar"><div class="level" style="width: 85%"></div></div></div>
     </div>
   </section>
 
-  <section class="projects">
+  <section class="projects fade-in">
     <h2>Projects</h2>
     <div class="project-cards">
       <div class="card">
-        <div class="icon">📊</div>
+        <div class="icon-circle bg-pink">📊</div>
         <h3>World Happiness Report Dashboard</h3>
         <p>An interactive Tableau dashboard visualizing global happiness data.</p>
-        <a href="#">View Project</a>
+        <a href="#" target="_blank">View Project</a>
       </div>
       <div class="card">
-        <div class="icon">⚙️</div>
+        <div class="icon-circle bg-lavender">⚙️</div>
         <h3>ESG Machine Learning Model</h3>
         <p>A machine learning model for predicting ESG metrics.</p>
-        <a href="#">View Project</a>
+        <a href="#" target="_blank">View Project</a>
       </div>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out to me!</p>
-    <a href="mailto:albina@example.com" class="email">albina@example.com</a>
+  <section class="education fade-in">
+    <h2>Education</h2>
+    <p><strong>Master's in Business Analytics</strong>, Boston, USA — 2024–2025</p>
+    <p><strong>Bachelor's in Economics & Statistics</strong>, HSE University, Moscow — with honors</p>
   </section>
+
+  <section class="contact fade-in">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me:</p>
+    <a href="mailto:albina@example.com" class="email">albina@example.com</a>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/albina-akhmatova/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Bina1205" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
 </body>
 </html>
-l>
