@@ -129,12 +129,11 @@ section {
   background: #d2cef2;
 }
 
-/* Project Cards */
 .project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .card {
