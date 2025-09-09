@@ -129,21 +129,26 @@ section {
   background: #d2cef2;
 }
 
+/* Projects section layout fix */
 .project-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 2rem;
   padding: 1rem;
+  align-items: stretch;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #ffffff;
   padding: 1.5rem;
   border-radius: 20px;
-  flex: 1 1 300px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.05);
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
 }
 
 .card:hover {
@@ -298,6 +303,11 @@ body.dark .level {
   .hero-img {
     margin-top: 1.5rem;
   }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
 }
+
 
 
