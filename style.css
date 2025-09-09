@@ -299,3 +299,71 @@ body.dark .download-btn:hover {
   box-shadow: 0 6px 18px rgba(255, 140, 255, 0.4);
 }
 
+/* Project tag styles */
+.tag {
+  display: inline-block;
+  background: #f3f1fe;
+  color: #5a4dc8;
+  border-radius: 12px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+/* Buttons */
+.download-btn, .github-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.download-btn {
+  background: #7a5ef8;
+  color: white;
+}
+.download-btn:hover {
+  background: #6347d4;
+}
+
+.github-link {
+  background: #e9e9ef;
+  color: #333;
+}
+.github-link:hover {
+  background: #ccc;
+}
+
+/* Icon circle */
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0ebf9;
+  border-radius: 50%;
+  margin-bottom: 0.6rem;
+}
+
+/* Dark mode */
+body.dark .download-btn {
+  background: #a58cff;
+  color: white;
+}
+body.dark .github-link {
+  background: #444;
+  color: white;
+}
+body.dark .tag {
+  background: #3a365a;
+  color: #d1cfff;
+}
+
+
