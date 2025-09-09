@@ -4,12 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Albina's Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <!-- Hero Section -->
-  <section class="hero fade-in">
+  <section class="hero">
     <div class="hero-text">
       <h1>Hello! I’m <span>Albina</span></h1>
       <p>I’m a data scientist specializing in business analytics, ESG analysis, and data visualization.</p>
@@ -34,35 +33,37 @@
   <!-- Projects Section -->
   <section class="projects fade-in">
     <h2>Projects</h2>
-    <div class="project-cards">
-
-      <!-- Project 1: Power BI Dashboard -->
+    <div class="projects-grid">
+      <!-- Project 1 -->
       <div class="project-card">
         <span class="emoji">🌍</span>
-        <h3><strong>World Happiness Report Dashboard</strong></h3>
+        <h3>World Happiness Report Dashboard</h3>
         <p>
-          Power BI dashboard visualizing global happiness data (2015–2023), with interactive maps, regional filters,
-          and top‑N charts for key metrics like generosity, corruption, and social support.
+          Power BI dashboard visualizing global happiness data (2015–2023), with interactive maps, regional filters, and top-N charts for key metrics like generosity, corruption, and social support.
         </p>
         <p><strong>Tools:</strong> Power BI, DAX, Power Query</p>
-        <a href="https://bina1205.github.io/WorldHappiness.pbix" download target="_blank">📥 Download .pbix file</a>
+        <a href="WorldHappiness.pbix" download style="
+          display: inline-block;
+          margin-top: 10px;
+          padding: 10px 16px;
+          background-color: #7c3aed;
+          color: white;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: bold;
+          transition: background-color 0.3s;">
+          📥 Download .pbix file
+        </a>
       </div>
 
-      <!-- Project 2: ESG ML Model -->
+      <!-- Project 2 -->
       <div class="project-card">
         <span class="emoji">📜</span>
-        <h3><strong>ESG Machine Learning Model</strong></h3>
-        <p>
-          A machine learning model for predicting ESG metrics using regression and classification pipelines.
-          Includes exploratory data analysis, feature engineering, and model evaluation.
-        </p>
-        <p><strong>Tools:</strong> Python, scikit-learn, pandas</p>
-        <a href="#">View Project</a>
+        <h3>ESG Machine Learning Model</h3>
+        <p>A machine learning model for predicting ESG metrics.</p>
+        <a href="#" style="color:#7c3aed;">View Project</a>
       </div>
-
     </div>
   </section>
-
 </body>
 </html>
-
