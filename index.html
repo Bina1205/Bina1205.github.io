@@ -1,101 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Albina's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <button class="theme-toggle" onclick="document.body.classList.toggle('dark')">🌓</button>
 
-  <!-- Hero -->
-  <section class="hero fade-in">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="hero-text">
       <h1>Hello! I’m <span>Albina</span></h1>
-      <p>Business Analytics Master’s graduate with expertise in data analytics, machine learning, and AI-driven insights. Skilled at transforming complex datasets into actionable strategies that enhance decision-making and business performance. Experienced in high-impact projects, including AI-powered chatbots, ESG modeling, algorithmic trading, and airline performance analysis. Strong proficiency in Python, R, SQL, and BI tools with a proven ability to connect analytics with business outcomes.</p>
+      <p>
+        Business Analytics Master’s graduate with expertise in data analytics, machine learning, and AI-driven insights.
+        Skilled at transforming complex datasets into actionable strategies that enhance decision-making and business
+        performance. Experienced in high-impact projects, including AI-powered chatbots, ESG modeling, algorithmic trading,
+        and airline performance analysis. Strong proficiency in Python, R, SQL, and BI tools with a proven ability to
+        connect analytics with business outcomes.
+      </p>
     </div>
     <div class="hero-img">
-      <img src="profile.jpg" alt="Albina Illustration" />
+      <img src="images/albina.jpg" alt="Albina's Profile Photo" />
     </div>
   </section>
 
-  <!-- Skills -->
+  <!-- Skills Section -->
   <section class="skills fade-in">
     <h2>Skills</h2>
     <div class="badges">
       <span>Python</span>
       <span>R</span>
       <span>SQL</span>
-      <span>Power BI</span>
       <span>Tableau</span>
+      <span>Power BI</span>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects Section -->
   <section class="projects fade-in">
     <h2>Projects</h2>
     <div class="project-cards">
-
-      <!-- World Happiness -->
+      <!-- Sample Project Card -->
       <div class="card">
         <div class="icon-circle">🌍</div>
-        <h3>World Happiness Dashboard</h3>
-        <p>Power BI dashboard visualizing global happiness data (2015–2023) with interactive maps, filters, and KPIs.</p>
-        <p><strong>Tools:</strong> <span class="tag">Power BI</span> <span class="tag">DAX</span></p>
-        <a class="download-btn" href="https://github.com/Bina1205/Bina1205.github.io/releases/download/v1.0/WorldHappiness.pbix" target="_blank">📥 Download .pbix</a>
-        <a class="github-link" href="https://github.com/Bina1205/WorldHappinessDashboard" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <h3>World Happiness Report Dashboard</h3>
+        <p>Power BI dashboard visualizing global happiness data (2015–2023), with maps, filters, and top-N charts.</p>
+        <p><strong>Tools:</strong> Power BI, DAX, Power Query</p>
+        <a class="button" href="https://github.com/Bina1205/Bina1205.github.io/releases/download/v1.0/WorldHappiness.pbix" target="_blank">
+          <i class="fa-solid fa-download"></i> Download .pbix File
+        </a>
       </div>
 
-      <!-- AI Chatbot -->
       <div class="card">
-        <div class="icon-circle">🤖</div>
-        <h3>AI-Powered Academic Chatbot</h3>
-        <p>Chatbot using OpenAI + Weaviate + Gradio, retrieving course docs from AWS S3 in real time.</p>
-        <p><strong>Tools:</strong> <span class="tag">Python</span> <span class="tag">OpenAI</span> <span class="tag">Gradio</span></p>
-        <a class="github-link" href="https://github.com/Bina1205/AI-Chatbot-Canvas" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <div class="icon-circle">📊</div>
+        <h3>ESG ML Model</h3>
+        <p>Machine learning model for ESG ratings using Python, financial indicators, and ESG factors.</p>
+        <p><strong>Tools:</strong> Python, Pandas, Scikit-learn</p>
+        <a class="github-link" href="https://github.com/Bina1205/esg-model" target="_blank">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
       </div>
 
-      <!-- Airline Analysis -->
-      <div class="card">
-        <div class="icon-circle">✈️</div>
-        <h3>Airline On-Time Analysis</h3>
-        <p>Analyzed U.S. flight delays (2023–2024) using SQL and AWS Athena. Found seasonal delay trends.</p>
-        <p><strong>Tools:</strong> <span class="tag">SQL</span> <span class="tag">AWS Athena</span></p>
-        <a class="github-link" href="https://github.com/Bina1205/Airline-OnTime-Analysis" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-      </div>
-
-      <!-- ESG ML Model -->
-      <div class="card">
-        <div class="icon-circle">🌱</div>
-        <h3>ESG Rating Model (ML)</h3>
-        <p>Created a machine learning model for ESG scoring using sustainability & financial metrics.</p>
-        <p><strong>Tools:</strong> <span class="tag">Python</span> <span class="tag">Scikit-learn</span></p>
-        <a class="github-link" href="https://github.com/Bina1205/ESG-ML-Scoring" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-      </div>
-
-      <!-- Airbnb Text Analysis -->
-      <div class="card">
-        <div class="icon-circle">🏡</div>
-        <h3>Airbnb Market Analysis</h3>
-        <p>Text mining + topic modeling on listings across U.S., Canada, Australia using R. Built dashboards in Shiny & Tableau.</p>
-        <p><strong>Tools:</strong> <span class="tag">R</span> <span class="tag">Shiny</span> <span class="tag">Tableau</span></p>
-        <a class="github-link" href="https://github.com/Bina1205/Airbnb-Text-Mining" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-      </div>
+      <!-- Add more cards as needed -->
 
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section class="contact fade-in">
     <h2>Contact</h2>
     <p>Feel free to reach out to me!</p>
     <div class="social-icons">
-      <a href="mailto:albina.akhmatova.prof@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="mailto:albina.akhmatova.prof@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
       <a href="https://www.linkedin.com/in/albina-akhmatova/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
     </div>
   </section>
+
 </body>
 </html>
 
